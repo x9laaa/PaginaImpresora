@@ -1,0 +1,91 @@
+/* Estilos generales para que se vea limpio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Centra el contenido en la pantalla */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Convertimos tu .grid en una cuadrícula real de 3 columnas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Separación entre las tarjetas */
+}
+
+/* Le damos estilo de tarjeta a tu div de impresora */
+.impresoras {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Una sombrita sutil */
+}
+
+.impresora1 h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Estilo para tu ícono de Material Symbols */
+.material-symbols-outlined {
+    font-size: 50px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* --- MAGIA DE LOS TANQUES DE TINTA --- */
+.ink-selector-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    /* Clave para que la tinta empiece desde abajo */
+}
+
+.ink-tank-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ink-tank {
+    width: 25px;
+    height: 70px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    position: relative;
+    /* Necesario para que el relleno se quede adentro */
+    background-color: #fff;
+}
+
+.ink-level {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* El height y el background-color se controlan desde el HTML */
+}
+
+.porcentaje {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}

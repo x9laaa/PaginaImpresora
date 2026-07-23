@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="RegistroTinta.css">
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Tinta</title>
+    <!-- Aquí llamamos al archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
+<div class="container">
+    <h2>Registro de tinta</h2>
     
+    <form>
+        <div class="form-group">
+            <label for="impresora">impresora:</label>
+            <select id="impresora" name="impresora">
+                <option value="">Seleccione una...</option>
+                <option value="imp1">Impresora Principal</option>
+                <option value="imp2">Impresora Secundaria</option>
+            </select>
+        </div>
+
+        <!-- Color Negro -->
+        <div class="slider-container">
+            <label style="color: black;">Negro</label>
+            <div class="slider-wrapper">
+                <span class="percent-label">0%</span>
+                <input type="range" name="negro" min="0" max="100" value="100">
+                <span class="percent-label">100%</span>
+            </div>
+        </div>
+
+        <!-- Color Azul -->
+        <div class="slider-container">
+            <label style="color: blue;">azul</label>
+            <div class="slider-wrapper">
+                <span class="percent-label">0%</span>
+                <input type="range" name="azul" min="0" max="100" value="100">
+                <span class="percent-label">100%</span>
+            </div>
+        </div>
+
+        <!-- Color Rojo -->
+        <div class="slider-container">
+            <label style="color: red;">Rojo</label>
+            <div class="slider-wrapper">
+                <span class="percent-label">0%</span>
+                <input type="range" name="rojo" min="0" max="100" value="100">
+                <span class="percent-label">100%</span>
+            </div>
+        </div>
+
+        <!-- Color Amarillo -->
+        <div class="slider-container">
+            <label style="color: #d4b500;">Amarillo</label>
+            <div class="slider-wrapper">
+                <span class="percent-label">0%</span>
+                <input type="range" name="amarillo" min="0" max="100" value="100">
+                <span class="percent-label">100%</span>
+            </div>
+        </div>
+
+        <div class="buttons-row">
+            <button type="submit" name="accion" value="falla">ingresar Falla</button>
+            <div class="right-buttons">
+                <!-- type="reset" limpia el formulario automáticamente sin necesidad de JS -->
+                <button type="reset">limpiar</button>
+                <button type="submit" name="accion" value="enviar">enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
 </body>
 </html>

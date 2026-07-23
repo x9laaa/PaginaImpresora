@@ -33,7 +33,7 @@ El sistema permitirá llevar un control centralizado de las incidencias, facilit
 ## Integrantes del Proyecto
 
 * **Luis Caba**
-* **Pedro Maldonado**
+* **Padro Maldonado**
 * **Dylan Allende**
 
 ## Control de Versiones
